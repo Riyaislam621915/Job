@@ -1,5 +1,47 @@
-h1{
-    background-color: brown;
-    padding: 20px 10px 30px 50px;
-    margin: 10px 20px 30px 100px;
+#box1{
+    width: 495px;
+    height: 50px;
+    border: 3px solid blanchedalmond;
+    background-color: aliceblue;
 }
+    .menu{
+        background-color: #ccc;
+        overflow: auto;
+        width: 500px;
+    }
+    ul{
+        list-style: none;
+        padding: opx;
+        margin:0px;
+    }
+    ul li{
+          float: left;
+          border-right: 1px solid red;
+    }
+    ul li:last-child{
+        border-right: none;
+    }
+    ul li a{
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: 0.5s;
+    }
+    ul li a:hover{
+        background-color: aliceblue;
+        color:blueviolet;
+        text-decoration: underline;
+    
+    }
+    #box3{
+        width: 495px;
+        height: 300px;
+        border: 3px solid blanchedalmond;
+        background-color: aliceblue;
+    }
+    #box4{
+        width: 495px;
+        height: 50px;
+        border: 3px solid blanchedalmond;
+        background-color: aliceblue;
+    }
