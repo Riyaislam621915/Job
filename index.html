@@ -2,27 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Toggle Riya</title>
+    <title>Web Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h1 style="height: 60%; margin-top: 200px; margin-left: 350px;">Dark Mode</h1>
-    <div class="custom-checkbox">
-        <input id="status" type="checkbox" name="status">
-        <label for="status">
-            <div class="status-switch" data-unchecked="Off" data-checked="On"></div>
-        </label>
+    <div id="Head"><b>Student Information Form</b></div>
+    <div class="Form">
+        <form action=""><br>
+            <label for="Name"><b>Name :</b></label>
+            <input type="text" name="fullname" required><br><br>
+            <label for="roll"><b>Roll :</b></label>
+            <input type="number" name="roll" required><br><br>
+            <label for="department"><b>Department :</b></label>
+            <input type="checkbox" name="CST">Computer Science & Technology
+            <input type="checkbox" name="ET">Electronic Technology <br>
+            <input type="checkbox" name="FT">Food Technology
+            <input type="checkbox" name="CT">Civil Technology
+            <input type="checkbox" name="AIDT">Architechture Technology <br><br>
+            <label for="semester"><b>Semester :</b></label>
+            <select name="semester">
+                <option value="fsem">1st semester</option>
+                <option value="fsem">2nd semester</option>
+                <option value="fsem">3rd semester</option>
+                <option value="fsem">4th semester</option>
+                <option value="fsem">5th semester</option>
+                <option value="fsem">6th semester</option>
+                <option value="fsem">7th semester</option>
+                <option value="fsem">8th semester</option>
+            </select><br><br>
+            <label for="email"><b>Email :</b></label>
+            <input type="email" name="email"required><br><br>
+            <label for="password"><b>Password :</b></label>
+            <input type="password" name="password"required> <br><br>
+            <label for="image"><b>Picture :</b></label>
+            <input type="file" name="Picture"><br><br>
+            <label for="date"><b>Date of Birth :</b></label>
+            <input type="date" name="date"><br><br>
+            <label for="gender"><b>Gender :</b></label>
+            <input type="radio" name="gender">Male <input type="radio" name="gender">Female <br><br>
+            <label for="Ask your question :"><b>Ask Your Question : </b></label><br>
+            <textarea name="question" cols="50" rows="5"></textarea><br><br>
+            <input type="reset">    <input type="submit">
+            </form>
     </div>
-
-    <script>
-        const checkbox = document.getElementById("status");
-
-        checkbox.addEventListener("change", function () {
-            document.body.classList.toggle("dark-mode", checkbox.checked);
-        });
-    </script>
+   
 </body>
 </html>
